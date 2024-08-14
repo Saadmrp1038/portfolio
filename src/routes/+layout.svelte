@@ -6,6 +6,7 @@
   import { page } from '$app/stores';
   import { fly } from 'svelte/transition';
   import profilePic from '$lib/assets/pial.jpg';
+  import { base } from '$app/paths';
 
   let isMenuOpen = false;
 
@@ -32,12 +33,12 @@
         </a>
         <div class="hidden md:flex space-x-6">
           {#each [
-            { href: '/', label: 'Home' },
-            { href: '/about', label: 'About' },
-            { href: '/projects', label: 'Projects' },
-            { href: '/competitions', label: 'Competitions' },
-            { href: '/skills', label: 'Skills' },
-            { href: '/education', label: 'Education' }
+            { href: `${base}/`, label: 'Home' },
+            { href: `${base}/about`, label: 'About' },
+            { href: `${base}/projects`, label: 'Projects' },
+            { href: `${base}/competitions`, label: 'Competitions' },
+            { href: `${base}/skills`, label: 'Skills' },
+            { href: `${base}/education`, label: 'Education' }
           ] as link}
             <a 
               href={link.href} 

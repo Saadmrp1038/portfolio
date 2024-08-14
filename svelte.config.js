@@ -6,7 +6,7 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: process.argv.includes('dev') ? '' : '/portfolio'
+      base: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
     }
   },
   preprocess: vitePreprocess()

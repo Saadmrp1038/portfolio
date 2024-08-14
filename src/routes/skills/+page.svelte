@@ -45,6 +45,11 @@ import cIcon from 'devicon/icons/c/c-original.svg';
   import opencvIcon from 'devicon/icons/opencv/opencv-original.svg';
   import dockerIcon from 'devicon/icons/docker/docker-original.svg';
   import gitIcon from 'devicon/icons/git/git-original.svg';
+  import supabaseIcon from 'devicon/icons/supabase/supabase-original.svg'
+  import seleniumIcon from 'devicon/icons/selenium/selenium-original.svg'
+  import fastAPIIcon from 'devicon/icons/fastapi/fastapi-original.svg'
+  import sqlalchemyIcon from 'devicon/icons/sqlalchemy/sqlalchemy-original.svg'
+  import expressIcon from 'devicon/icons/express/express-original.svg'
 
   const skillIcons = {
     "C/C++": { type: 'devicon', icon: cppIcon },  // Use C++ icon for C/C++
@@ -55,17 +60,17 @@ import cIcon from 'devicon/icons/c/c-original.svg';
     "React": { type: 'devicon', icon: reactIcon },
     "Svelte": { type: 'devicon', icon: svelteIcon },
     "Node.js": { type: 'devicon', icon: nodejsIcon },
-    "Express": faNodeJs,  // No Devicon, using FontAwesome
+    "Express": { type: 'devicon', icon: expressIcon },
     "Spring Boot": { type: 'devicon', icon: springIcon },
     "PostgreSQL": { type: 'devicon', icon: postgresqlIcon },
     "MySQL": { type: 'devicon', icon: mysqlIcon },
     "Oracle": { type: 'devicon', icon: oracleIcon },
-    "Supabase": faDatabase,  // No Devicon, using FontAwesome
+    "Supabase": { type: 'devicon', icon: supabaseIcon },
     "Flutter": { type: 'devicon', icon: flutterIcon },
     "Git": { type: 'devicon', icon: gitIcon },
     "Docker": { type: 'devicon', icon: dockerIcon },
     "OpenAI API": faSolidLightbulb,  // No Devicon, using FontAwesome
-    "Selenium": faCogs,  // No Devicon, using FontAwesome
+    "Selenium": { type: 'devicon', icon: seleniumIcon },
     "Machine Learning": faRobot,  // No Devicon, using FontAwesome
     "OpenCV": { type: 'devicon', icon: opencvIcon },
     "Natural Language Processing": faSolidBrain,  // No Devicon, using FontAwesome
@@ -74,7 +79,9 @@ import cIcon from 'devicon/icons/c/c-original.svg';
     "Optimization": faChartLine,  // No Devicon, using FontAwesome
     "Critical Thinking": faSolidBrain,  // No Devicon, using FontAwesome
     "Problem Solving": faTasks,  // No Devicon, using FontAwesome
-    "Team Player": faUsers  // No Devicon, using FontAwesome
+    "Team Player": faUsers,  // No Devicon, using FontAwesome
+	"FastAPI": { type: 'devicon', icon: fastAPIIcon },
+	"SQLAlchemy": { type: 'devicon', icon: sqlalchemyIcon },
   };
 
 	const skillCategories = [
@@ -88,7 +95,7 @@ import cIcon from 'devicon/icons/c/c-original.svg';
 			name: 'Web Dev',
 			icon: faServer,
 			color: 'bg-green-500',
-			skills: ['React', 'Svelte', 'Node.js', 'Express', 'Spring Boot']
+			skills: ['React', 'Svelte/Sveltekit', 'Node.js', 'Express', 'Spring Boot','FastAPI','SQLAlchemy']
 		},
 		{
 			name: 'Databases',

@@ -25,7 +25,7 @@
   <header class="bg-slate-800 shadow-md">
     <div class="container mx-auto px-6 py-4">
       <nav class="flex justify-between items-center">
-        <a href="/" class="flex items-center space-x-3">
+        <a href="{base}/" class="flex items-center space-x-3">
           <img src={profilePic} alt="Saad Pial" class="w-10 h-10 rounded-full border-2 border-purple-500" />
           <span class="text-2xl font-bold bg-clip-text text-slate-400 font-poppins tracking-wide drop-shadow-md">
             Pial

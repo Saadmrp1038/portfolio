@@ -3,6 +3,7 @@
   import { fade, fly } from 'svelte/transition';
   import { faTrophy, faCode, faGraduationCap, faLaptopCode, faRobot, faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
   import Icon from 'svelte-awesome';
+  import { base } from '$app/paths';
 
   let typedText = '';
   let fullText = "Saad Mohammad Rafid Pial";
@@ -93,8 +94,8 @@
       <div in:fade={{ delay: 900 }} class="text-center">
         <h2 class="text-3xl font-bold mb-8 font-poppins">Ready to dive deeper?</h2>
         <div class="space-x-4">
-          <a href="/projects" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:from-cyan-600 hover:to-blue-600 transition duration-300 shadow-lg">Explore Projects</a>
-          <a href="/competitions" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition duration-300 shadow-lg">View Competitions</a>
+          <a href="{base}/projects" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:from-cyan-600 hover:to-blue-600 transition duration-300 shadow-lg">Explore Projects</a>
+          <a href="{base}/competitions" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition duration-300 shadow-lg">View Competitions</a>
         </div>
       </div>
     {/if}

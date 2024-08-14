@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/portfolio'
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           pnpm run build
 

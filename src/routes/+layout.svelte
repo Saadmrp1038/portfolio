@@ -61,12 +61,12 @@
       transition:fly={{ y: -100, duration: 300 }}
     >
       {#each [
-        { href: '/', label: 'Home' },
-        { href: '/about', label: 'About' },
-        { href: '/projects', label: 'Projects' },
-        { href: '/competitions', label: 'Competitions' },
-        { href: '/skills', label: 'Skills' },
-        { href: '/education', label: 'Education' }
+         { href: `${base}/`, label: 'Home' },
+            { href: `${base}/about`, label: 'About' },
+            { href: `${base}/projects`, label: 'Projects' },
+            { href: `${base}/competitions`, label: 'Competitions' },
+            { href: `${base}/skills`, label: 'Skills' },
+            { href: `${base}/education`, label: 'Education' }
       ] as link}
         <a 
           href={link.href} 

@@ -88,7 +88,7 @@
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0 text-center md:text-left">
           <h3 class="text-xl font-semibold font-poppins">Saad Mohammad Rafid Pial</h3>
-          <p class="text-slate-400">Competitive Programmer | AI Enthusiast | Full Stack Developer</p>
+          <p class="text-slate-400">Competitive Programmer | AI Enthusiast | Full Stack Developer | Flutter Developer</p>
         </div>
         <div class="flex space-x-6">
           <a href="mailto:saadmrp222@gmail.com" class="text-slate-400 hover:text-white transition duration-300 transform hover:scale-110">

@@ -82,7 +82,7 @@
 			</h1>
 			{#if showContent}
 				<p in:fade class="text-xl text-gray-300 mt-4">
-					Competitive Programmer | AI Enthusiast | Full Stack Developer
+					Competitive Programmer | AI Enthusiast | Full Stack Developer | Flutter Developer
 				</p>
 			{/if}
 		</div>

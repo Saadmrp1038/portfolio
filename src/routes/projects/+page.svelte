@@ -8,7 +8,7 @@
     {
       name: "E-Bookopolis",
       technologies: ["HTML", "CSS", "JS", "EJS", "NodeJS", "ExpressJS", "Oracle"],
-      description: "A simple CRUD app for buying and selling books and generating receipt.",
+      description: "An online bookstore where users can buy books, track their purchases, and share blog posts. Admins manage the book collection, while users can interact through book reviews and blog comments.",
       course: "CSE-216 (Database) Course Project",
       color: "bg-indigo-600"
     },
@@ -43,7 +43,7 @@
     {
       name: "Voyager",
       technologies: ["Sveltekit", "TailwindCSS", "TypeScript", "Postgres", "Drizzle", "DaisyUI"],
-      description: "A attraction discovery website to help find detailed information, including weather, amenities, and user reviews of locations. Users can contribute their own travel experiences and suggest new attractions for others to explore.",
+      description: "An attraction discovery website to help find detailed information, including weather, amenities, and user reviews of locations. Users can contribute their own travel experiences and suggest new attractions for others to explore.",
       event: "IUT OpenAPI Hackathon 2024",
       color: "bg-violet-600"
     },

@@ -80,6 +80,10 @@
   });
 </script>
 
+<svelte:head>
+	<title>Projects - Saad Mohammad Rafid Pial</title>
+</svelte:head>
+
 <div class="container mx-auto px-6 py-12">
   <h1 class="text-4xl font-bold mb-12 text-center text-white font-poppins">
     My Projects

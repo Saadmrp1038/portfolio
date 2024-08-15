@@ -150,6 +150,10 @@
     }
 </script>
 
+<svelte:head>
+	<title>Competitions - Saad Mohammad Rafid Pial</title>
+</svelte:head>
+
 <div class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
   <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center text-white font-poppins">
       Competition Timeline

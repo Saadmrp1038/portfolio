@@ -28,7 +28,7 @@
 	} from '@fortawesome/free-solid-svg-icons';
 
 // Add Devicon imports
-import cIcon from 'devicon/icons/c/c-original.svg';
+  import cIcon from 'devicon/icons/c/c-original.svg';
   import cppIcon from 'devicon/icons/cplusplus/cplusplus-original.svg';
   import javaIcon from 'devicon/icons/java/java-original.svg';
   import pythonIcon from 'devicon/icons/python/python-original.svg';
@@ -58,7 +58,7 @@ import cIcon from 'devicon/icons/c/c-original.svg';
     "JavaScript": { type: 'devicon', icon: jsIcon },
     "TypeScript": { type: 'devicon', icon: typescriptIcon },
     "React": { type: 'devicon', icon: reactIcon },
-    "Svelte": { type: 'devicon', icon: svelteIcon },
+    "Svelte/Sveltekit": { type: 'devicon', icon: svelteIcon },
     "Node.js": { type: 'devicon', icon: nodejsIcon },
     "Express": { type: 'devicon', icon: expressIcon },
     "Spring Boot": { type: 'devicon', icon: springIcon },
@@ -135,6 +135,10 @@ import cIcon from 'devicon/icons/c/c-original.svg';
 		}
 	];
 </script>
+
+<svelte:head>
+	<title>Skills - Saad Mohammad Rafid Pial</title>
+</svelte:head>
 
 <div class="container mx-auto px-6 py-12 bg-gradient-to-br from-gray-900 to-slate-800">
 	<h1 class="text-4xl font-bold mb-12 text-center text-white font-poppins">My Skills</h1>

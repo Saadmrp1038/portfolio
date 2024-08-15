@@ -53,7 +53,14 @@
       description: "An AI powered shopping platform with 21000 products scraped from various sites supporting multi-modal search.",
       event: "YOBO Hackhathon 2024",
       color: "bg-cyan-600"
-    }
+    },
+    {
+      name: "Sohojogi",
+      technologies: ["Flutter", "Dart", "Supabase", "FastAPI"],
+      description: "A mobile-based application designed to educate and inspire rural men to become advocates for gender equality, featuring offline access, Bengali language support, and various modules for community engagement and information sharing.",
+      event: "Gen-Dev AI Hackhathon 2024",
+      color: "bg-teal-600"
+    },
   ];
 
   let visibleProjects = [];

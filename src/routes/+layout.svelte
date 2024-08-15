@@ -21,7 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
 </svelte:head>
 
-<div class="min-h-screen flex flex-col bg-gradient-to-br from-slate-900 to-slate-800 text-white font-inter">
+<div class="min-h-screen flex flex-col bg-slate-900 text-white font-inter">
   <header class="bg-slate-800 shadow-md">
     <div class="container mx-auto px-6 py-4">
       <nav class="flex justify-between items-center">

@@ -70,7 +70,7 @@
 </svelte:head>
 
 <div
-	class="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8 font-inter"
+	class="min-h-screen text-white py-12 px-4 sm:px-6 lg:px-8 font-inter"
 >
 	<div class="max-w-7xl mx-auto">
 		<div class="text-center mb-16">

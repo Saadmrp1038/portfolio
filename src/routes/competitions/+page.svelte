@@ -79,31 +79,31 @@
   });
 </script>
 
-<div class="container mx-auto px-6 py-12">
-  <h1 class="text-4xl font-bold mb-12 text-center text-white font-poppins">
+<div class="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center text-white font-poppins">
     Competition Timeline
   </h1>
   
   <div class="relative">
     {#each competitions as yearGroup, i}
-      <div class="year-section mb-16" data-year={yearGroup.year}>
+      <div class="year-section mb-12 sm:mb-16" data-year={yearGroup.year}>
         {#if visibleYears.includes(yearGroup.year.toString())}
           <div in:fly="{{ x: -50, duration: 500, delay: i * 200 }}" out:fade>
-            <div class="flex items-center mb-8">
-              <div class="w-24 h-24 rounded-full bg-slate-700 flex items-center justify-center text-3xl font-bold text-white">
+            <div class="flex items-center mb-6 sm:mb-8">
+              <div class="w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-slate-700 flex items-center justify-center text-xl sm:text-3xl font-bold text-white">
                 {yearGroup.year}
               </div>
               <div class="flex-grow h-1 bg-slate-700 ml-4"></div>
             </div>
-            <div class="ml-32 space-y-8">
+            <div class="ml-8 sm:ml-32 space-y-6 sm:space-y-8">
               {#each yearGroup.events as event, j}
                 <div in:fly="{{ y: 50, duration: 500, delay: (i * 200) + (j * 100) }}" out:fade
-                     class="bg-slate-800 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-300">
-                  <div class="flex items-center mb-4">
-                    <Icon data={event.icon} scale={2} class="mr-4 text-yellow-400" />
-                    <h2 class="text-xl font-bold text-white">{event.name}</h2>
+                     class="bg-slate-800 rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <div class="flex items-center mb-3 sm:mb-4">
+                    <Icon data={event.icon} scale={1.5} class="mr-3 sm:mr-4 text-yellow-400" />
+                    <h2 class="text-lg sm:text-xl font-bold text-white">{event.name}</h2>
                   </div>
-                  <p class="text-sm text-slate-300">{event.achievement}</p>
+                  <p class="text-xs sm:text-sm text-slate-300">{event.achievement}</p>
                 </div>
               {/each}
             </div>
@@ -111,7 +111,7 @@
         {/if}
       </div>
     {/each}
-    <div class="absolute top-0 bottom-0 left-12 w-0.5 bg-slate-700"></div>
+    <div class="absolute top-0 bottom-0 left-8 sm:left-12 w-0.5 bg-slate-700"></div>
   </div>
 </div>
 
@@ -121,5 +121,11 @@
   }
   .font-poppins {
     font-family: 'Poppins', sans-serif;
+  }
+
+  @media (max-width: 640px) {
+    .year-section {
+      padding-left: 1rem;
+    }
   }
 </style>

@@ -60,36 +60,36 @@
   });
 </script>
 
-<div class="container mx-auto px-6 py-12 bg-gray-900">
-  <h1 class="text-4xl font-bold mb-12 text-center text-white font-poppins">
+<div class="container mx-auto px-4 sm:px-6 py-8 sm:py-12 bg-gray-900">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center text-white font-poppins">
     My Educational Journey
   </h1>
   
-  <div class="space-y-12">
+  <div class="space-y-8 sm:space-y-12">
     {#each educationData as edu, i}
       <div class="education-item" data-education={edu.degree}>
         {#if visibleEducation.includes(edu.degree)}
           <div 
             in:fly="{{ y: 50, duration: 500, delay: i * 200 }}" 
             out:fade
-            class="bg-slate-800 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-indigo-500"
+            class="bg-slate-800 rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-indigo-500"
           >
-            <div class="flex items-center mb-4">
-              <Icon data={faGraduationCap} scale={2} class="mr-4 text-indigo-400" />
-              <h2 class="text-2xl font-bold text-white">{edu.degree}</h2>
+            <div class="flex items-center mb-3 sm:mb-4">
+              <Icon data={faGraduationCap} scale={1.5} class="mr-3 sm:mr-4 text-indigo-400" />
+              <h2 class="text-xl sm:text-2xl font-bold text-white">{edu.degree}</h2>
             </div>
-            <div class="ml-12 space-y-2">
-              <p class="text-xl text-slate-300">{edu.institution}</p>
-              <p class="text-sm text-slate-400 flex items-center">
-                <Icon data={faCalendarAlt} class="mr-2" /> {edu.duration}
+            <div class="ml-8 sm:ml-12 space-y-2">
+              <p class="text-lg sm:text-xl text-slate-300">{edu.institution}</p>
+              <p class="text-xs sm:text-sm text-slate-400 flex items-center">
+                <Icon data={faCalendarAlt} scale={0.8} class="mr-2" /> {edu.duration}
               </p>
-              <p class="text-sm text-slate-400 flex items-center">
-                <Icon data={faMapMarkerAlt} class="mr-2" /> {edu.location}
+              <p class="text-xs sm:text-sm text-slate-400 flex items-center">
+                <Icon data={faMapMarkerAlt} scale={0.8} class="mr-2" /> {edu.location}
               </p>
-              <p class="text-sm text-indigo-400 flex items-center font-semibold">
-                <Icon data={faStar} class="mr-2" /> {edu.gpa}
+              <p class="text-xs sm:text-sm text-indigo-400 flex items-center font-semibold">
+                <Icon data={faStar} scale={0.8} class="mr-2" /> {edu.gpa}
               </p>
-              <ul class="list-disc list-inside text-slate-300 mt-4">
+              <ul class="list-disc list-inside text-sm sm:text-base text-slate-300 mt-3 sm:mt-4">
                 {#each edu.details as detail}
                   <li>{detail}</li>
                 {/each}
@@ -109,5 +109,12 @@
   }
   .font-poppins {
     font-family: 'Poppins', sans-serif;
+  }
+
+  @media (max-width: 640px) {
+    .education-item {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
   }
 </style>

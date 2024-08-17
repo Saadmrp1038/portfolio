@@ -54,7 +54,7 @@
 						Saad Mohammad Rafid Pial
 					</h1>
 					<p class="text-xl text-gray-300">
-						Aspiring Software Engineer | AI Enthusiast | Competitive Programmer
+						Aspiring Software Engineer | AI Enthusiast | Competitive Programmer | Flutter Developer
 					</p>
 				</div>
 			</div>

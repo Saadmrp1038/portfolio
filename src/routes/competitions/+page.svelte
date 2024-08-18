@@ -154,8 +154,8 @@
 	<title>Competitions - Saad Mohammad Rafid Pial</title>
 </svelte:head>
 
-<div class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
-  <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center text-white font-poppins">
+<div class="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
+	<h1 class="text-4xl font-bold mb-12 text-center text-white font-poppins">
       Competition Timeline
   </h1>
 
@@ -178,7 +178,7 @@
                               <div
                                   in:fly={{ y: 50, duration: 500, delay: i * 200 + j * 100 }}
                                   out:fade
-                                  class="bg-slate-800 rounded-lg p-3 sm:p-4 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 ml-4 sm:ml-6 relative"
+                                  class="bg-slate-800 rounded-lg p-2 sm:p-4 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 ml-4 sm:ml-6 relative"
                               >
                                   <div class="flex flex-col md:flex-row md:items-start">
                                       <div class="flex-grow">

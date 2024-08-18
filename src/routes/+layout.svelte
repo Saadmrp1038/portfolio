@@ -4,7 +4,8 @@
   import { faEnvelope, faBars } from '@fortawesome/free-solid-svg-icons';
   import Icon from 'svelte-awesome';
   import { page } from '$app/stores';
-  import { fly } from 'svelte/transition';
+  import { fade, fly } from 'svelte/transition';
+  import { quintOut } from 'svelte/easing';
   import profilePic from '$lib/assets/pial.jpg';
   import { base } from '$app/paths';
 
@@ -22,7 +23,7 @@
 </svelte:head>
 
 <div class="min-h-screen flex flex-col bg-slate-900 text-white font-inter">
-  <header class="bg-slate-800 shadow-md">
+  <header class="bg-slate-800 shadow-md relative z-50">
     <div class="container mx-auto px-6 py-4">
       <nav class="flex justify-between items-center">
         <a href="{base}/" class="flex items-center space-x-3">
@@ -57,20 +58,25 @@
 
   {#if isMenuOpen}
     <div 
-      class="md:hidden bg-slate-800 py-4"
-      transition:fly={{ y: -100, duration: 300 }}
+      class="fixed inset-0 bg-slate-900 bg-opacity-50 z-40"
+      on:click={toggleMenu}
+      transition:fade={{ duration: 200 }}
+    ></div>
+    <div 
+      class="fixed top-[73px] left-0 right-0 bg-slate-800 z-50 shadow-lg"
+      transition:fly={{ y: -500, duration: 300, easing: quintOut }}
     >
       {#each [
-         { href: `${base}/`, label: 'Home' },
-            { href: `${base}/about`, label: 'About' },
-            { href: `${base}/projects`, label: 'Projects' },
-            { href: `${base}/competitions`, label: 'Competitions' },
-            { href: `${base}/skills`, label: 'Skills' },
-            { href: `${base}/education`, label: 'Education' }
+        { href: `${base}/`, label: 'Home' },
+        { href: `${base}/about`, label: 'About' },
+        { href: `${base}/projects`, label: 'Projects' },
+        { href: `${base}/competitions`, label: 'Competitions' },
+        { href: `${base}/skills`, label: 'Skills' },
+        { href: `${base}/education`, label: 'Education' }
       ] as link}
         <a 
           href={link.href} 
-          class="block py-2 px-6 text-slate-300 hover:bg-slate-700 transition duration-300 {currentPath === link.href ? 'bg-slate-700' : ''}"
+          class="block py-3 px-6 text-slate-300 hover:bg-slate-700 transition duration-300 {currentPath === link.href ? 'bg-slate-700' : ''}"
           on:click={() => isMenuOpen = false}
         >
           {link.label}

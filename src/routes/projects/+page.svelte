@@ -102,7 +102,7 @@
 	<title>Projects - Saad Mohammad Rafid Pial</title>
 </svelte:head>
 
-<div class="container mx-auto px-6 py-12">
+<div class="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
   <h1 class="text-4xl font-bold mb-12 text-center text-white font-poppins">
     My Projects
   </h1>

@@ -64,7 +64,7 @@
 	<title>Education - Saad Mohammad Rafid Pial</title>
 </svelte:head>
 
-<div class="container mx-auto px-4 sm:px-6 py-8 sm:py-12 bg-gray-900">
+<div class="container mx-auto px-2 sm:px-4 py-4 sm:py-8 bg-gray-900">
   <h1 class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center text-white font-poppins">
     My Educational Journey
   </h1>

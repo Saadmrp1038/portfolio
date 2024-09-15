@@ -23,9 +23,11 @@
 	import iutNationalICT from '$lib/assets/IUT National ICT Fest_OpenAPI Hackhathon_Champion.jpeg';
 	import secCSEFest from '$lib/assets/SEC CSE Fest 2022_7th.jpeg';
 	import sustCSECarnival from '$lib/assets/SUST CSE Carnival_Hackhathon_Champion.jpg';
+	import BCOLBC2024 from '$lib/assets/BCOLBD 2024.jpg'
 
 	// Create a map of certificate names to their imported images
 	const certificateMap = {
+		'BCOLBD 2024.jpg': BCOLBC2024,
 		'AUST IUPC 2022_Participation Certificate.jpeg': austIUPC,
 		'Dev Sprint_Champion.jpg': devSprint,
 		'Gen-Dev.png': genDev,
@@ -40,6 +42,12 @@
 		{
 			year: 2024,
 			events: [
+				{
+					name: 'BCOLBD 2024 AI Category',
+					achievement: "Honorable Mention",
+					icon: faMedal,
+					certificate: 'BCOLBD 2024.jpg'
+				},
 				{
 					name: 'Gen-Dev AI Hackathon: Gender Knowledge Augmentation',
 					achievement: "Runner's-up",
@@ -108,7 +116,7 @@
 		}
 	];
 
-	    let visibleYears = [];
+	let visibleYears = [];
     let selectedCertificate = null;
     let isMobile = false;
 
